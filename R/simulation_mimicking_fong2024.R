@@ -41,7 +41,7 @@ library(dplyr)
 library(data.table)
 set.seed(888) # random seed
 
-source("./R/dkosim.R")
+source("./R/dkosim_lab.R")
 ### Major Modifications Before Each Run
 ### 1. Simulation Name: sample_name
 ### 2. Simulation Settings: initialized parameter

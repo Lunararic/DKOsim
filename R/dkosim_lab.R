@@ -28,13 +28,12 @@ cat("
 
 # Proportion of Each Initialized Gene Class (by theoretical phenotypes):
 ## Negative(%):", pt_neg * 100, "~ TN(", mu_neg, "," , sd_neg^2, ",-1,-0.025)
-## Positive(%):", pt_pos * 100, "~ TN(", mu_pos, "," ,sd_pos^2, ",0.025, 1)
-## Wild-Type(%):", pt_wt * 100, "~ TN(0,", sd_wt^2, ",-0.025, 0.025)
+## Unknown(%):", pt_wt * 100, "~ TN(0,", sd_wt^2, ",-0.5, 0.5)
 ## Non-Targeting Control(%):", pt_ctrl * 100, "~ Delta(0)               
 
 # Proportion of Guides (by efficacy):
-## High-efficacy(%):", p_high * 100, "~ 1
-## Low-efficacy(%):", (1-p_high) * 100, "~ TN(0.05, 0.0049, 0, 1)
+## High-efficacy(%):", p_high * 100, "~ TN(0.9, 0.1, 0.6, 1)
+## Low-efficacy(%):", (1-p_high) * 100, "~ TN(0.05, 0.0049, 0, 0.6)
 
 # Multiplicity of Infection (MOI):", moi , "
 # Percentage of viral particles delivered in cells during transfection(%):", round(dpois(1, lambda = moi) * 100, 2) , "~ Poisson(",moi,")

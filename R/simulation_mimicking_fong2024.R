@@ -70,8 +70,8 @@ mode = "CRISPRn" # CRISPR mode: use CRISPRn-100%Eff for need 100% efficient guid
 ## gene class parameters: 
 ### % of theoretical phenotype to each gene class - add up to 1
 pt_neg = 64/246 # % negative phenotype (essential)
-pt_pos = 0 # % positive phenotype (non-essential)
-pt_wt = 178/246 # % wild-type
+pt_pos = 0 # % positive phenotype
+pt_wt = 178/246 # % Unknown
 pt_ctrl = 4/246 # % non-targeting control
 ### mean and std dev of theoretical phenotypes
 mu_neg = -0.03 # mean: negative phenotype
@@ -80,7 +80,7 @@ sd_neg = 0.25 # std dev: negative phenotype
 mu_pos = 0.75 # mean: positive phenotype
 sd_pos = 0.1 # std dev: positive phenotype
 
-sd_wt = 0.2 # std dev: wildtype phenotype
+sd_wt = 0.2 # std dev: Unknown phenotype
 
 ## bottleneck parameters
 bottleneck = 2 * library_size # bottleneck size
